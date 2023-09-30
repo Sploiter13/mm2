@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local LP = Players.LocalPlayer
 local roles
-getgenv().loop = false
+getgenv().loop = true
 -- > Functions <--
 
 function CreateHighlight() -- make any new highlights for new players
@@ -20,7 +20,7 @@ function IsAlive(Player) -- Simple sexy function
 			if not v.Killed and not v.Dead then
 				return true
 			else
-				return false
+				return true
 			end
 		end
 	end
